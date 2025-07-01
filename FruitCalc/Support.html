@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitsCalc Support</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f1f8e9 100%);
+            min-height: 100vh;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #2e7d32;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .fruit-guide {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .fruit-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .fruit-emoji {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .contact-info {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .contact-email {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+        
+        .faq-item {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
+        .version-info {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="app-icon">🌳</div>
+        <h1>FruitsCalc</h1>
+        <p class="subtitle">Colorful Fruit-Themed Calculator</p>
+    </div>
+
+    <div class="section">
+        <h2>About FruitsCalc</h2>
+        <p>FruitsCalc transforms your everyday calculations into a magical fruit garden experience! Our unique calculator features an interactive tree where each number is represented by a colorful fruit, making math both beautiful and engaging.</p>
+        
+        <div class="fruit-guide">
+            <div class="fruit-item">
+                <span class="fruit-emoji">🍎</span>
+                <strong>Red Apples</strong><br>
+                Numbers 1, 2, 3
+            </div>
+            <div class="fruit-item">
+                <span class="fruit-emoji">🍊</span>
+                <strong>Oranges</strong><br>
+                Numbers 4, 5, 6
+            </div>
+            <div class="fruit-item">
+                <span class="fruit-emoji">🍌</span>
+                <strong>Bananas</strong><br>
+                Numbers 7, 8
+            </div>
+            <div class="fruit-item">
+                <span class="fruit-emoji">🍇</span>
+                <strong>Grapes</strong><br>
+                Numbers 9, 0
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+            <li>🌳 Beautiful interactive fruit tree interface</li>
+            <li>🍎 Colorful fruit-themed number buttons</li>
+            <li>☁️ Cloud-shaped display for results</li>
+            <li>🎨 Vibrant blue sky gradient background</li>
+            <li>✨ Smooth animations and delightful interactions</li>
+            <li>📱 Universal support for iPhone and iPad</li>
+            <li>🚫 No ads, no tracking - pure calculation joy</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>How to Use FruitsCalc</h2>
+        <div class="faq-item">
+            <div class="faq-question">How do I perform calculations?</div>
+            <p>Simply tap the colorful fruit buttons to enter numbers, use the operation buttons (+, -, ×, ÷) for calculations, and tap equals (=) to see your result in the cloud display.</p>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What do the different fruits represent?</div>
+            <p>Each fruit type represents specific numbers: Red apples (1,2,3), Oranges (4,5,6), Bananas (7,8), and Grapes (9,0). The green apple is for decimal points.</p>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I clear my calculation?</div>
+            <p>Tap the red "Clear" button at the bottom to reset the calculator and start a new calculation.</p>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Does FruitsCalc work on iPad?</div>
+            <p>Yes! FruitsCalc is a universal app that works beautifully on both iPhone and iPad with optimized layouts for each device.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is FruitsCalc suitable for children?</div>
+            <p>Absolutely! FruitsCalc is designed to make math fun and engaging for users of all ages. The colorful fruit theme helps children associate numbers with familiar objects, making learning more enjoyable.</p>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Does the app collect any personal data?</div>
+            <p>No, FruitsCalc does not collect, store, or transmit any personal data. It's a completely offline calculator app that respects your privacy.</p>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Are there any in-app purchases?</div>
+            <p>No, FruitsCalc is a complete app with no in-app purchases. You get all features with your one-time purchase.</p>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Can I use FruitsCalc for complex calculations?</div>
+            <p>FruitsCalc supports all standard calculator functions including addition, subtraction, multiplication, division, and decimal calculations. It's perfect for everyday math needs.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contact Support</h2>
+        <div class="contact-info">
+            <p>Need help or have questions about FruitsCalc? We're here to help!</p>
+            <p><strong>Email:</strong> <a href="mailto:support@fruitsalc.app" class="contact-email">support@fruitsalc.app</a></p>
+            <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+            <p>When contacting support, please include:</p>
+            <ul>
+                <li>Your device model and iOS version</li>
+                <li>FruitsCalc app version</li>
+                <li>Description of the issue or question</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>System Requirements</h2>
+        <ul class="feature-list">
+            <li>📱 Compatible with iPhone and iPad</li>
+            <li>🔄 Requires iOS 16.0 or later</li>
+            <li>💾 Minimal storage space required</li>
+            <li>🌐 No internet connection required</li>
+        </ul>
+    </div>
+
+    <div class="version-info">
+        <p><strong>FruitsCalc</strong> - Version 1.0</p>
+        <p>© 2025 FruitsCalc. All rights reserved.</p>
+        <p>Transform your calculations into a delightful fruit garden experience!</p>
+    </div>
+</body>
+</html>
