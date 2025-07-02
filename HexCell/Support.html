@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - HexCell Growth</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f7;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1d1d1f;
+            border-bottom: 3px solid #007AFF;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #1d1d1f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #1d1d1f;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-left: 4px solid #007AFF;
+            margin: 20px 0;
+        }
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .faq-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 3px solid #007AFF;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HexCell Growth Support</h1>
+        
+        <div class="highlight">
+            <strong>Quick Help:</strong> Most questions can be answered below! If you need additional assistance, scroll down to the contact section.
+        </div>
+
+        <h2>Getting Started</h2>
+        <p>HexCell Growth is an interactive grain growth simulation that demonstrates how crystal structures evolve in materials science. Here's how to use the app:</p>
+        
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Start/Pause</h3>
+                <p>Tap the green "Start" button to begin the simulation. The button changes to red "Pause" when running.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Add Nuclei</h3>
+                <p>Tap anywhere on the black simulation area to add new crystal nucleation sites that will grow.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Adjust Settings</h3>
+                <p>Use the sliders to control "Dynamics" (growth rate) and "Nuclei" (number of starting grains).</p>
+            </div>
+            <div class="feature-item">
+                <h3>View Statistics</h3>
+                <p>Tap "Stats" to see live data including cell count, filled percentage, and dynamics value.</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>Q: What is grain growth simulation?</h3>
+            <p><strong>A:</strong> Grain growth is a process in materials science where crystal grains in metals and other materials compete for space and merge over time. This simulation shows how hexagonal grains evolve according to scientific principles used in metallurgy research.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Why does the app ask for photo library access?</h3>
+            <p><strong>A:</strong> Photo library access is only requested when you tap the "Save" button to save simulation screenshots. The app never reads your existing photos - it only adds new images when you choose to save them.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: The simulation seems slow or laggy. What can I do?</h3>
+            <p><strong>A:</strong> Try reducing the "Nuclei" count using the slider, or lower the "Dynamics" setting. The simulation is computationally intensive, especially on older devices.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: How do I clear the simulation and start over?</h3>
+            <p><strong>A:</strong> Tap the orange "Clear" button to reset the simulation to a blank state, then tap "Start" to begin a new simulation.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Can I control the colors of the grains?</h3>
+            <p><strong>A:</strong> The colors are automatically generated based on scientific algorithms. Each grain gets a unique color to help distinguish between different crystal regions.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Is this educationally accurate?</h3>
+            <p><strong>A:</strong> Yes! The simulation uses cellular automata algorithms based on real materials science principles. It's suitable for educational use in materials science, metallurgy, and crystallography courses.</p>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <h3>App Performance Issues</h3>
+        <ul>
+            <li><strong>Slow simulation:</strong> Reduce nuclei count and dynamics settings</li>
+            <li><strong>App crashes:</strong> Try restarting the app and using lower settings</li>
+            <li><strong>UI not responsive:</strong> Clear the simulation and restart</li>
+        </ul>
+
+        <h3>Photo Saving Issues</h3>
+        <div class="warning">
+            <p><strong>Permission Denied:</strong> Go to iOS Settings > Privacy & Security > Photos > HexCell Growth and enable access.</p>
+        </div>
+        
+        <div class="success">
+            <p><strong>Recommended Setting:</strong> Choose "Add Photos Only" for optimal privacy when prompted for photo access.</p>
+        </div>
+
+        <h3>Common Solutions</h3>
+        <ul>
+            <li><strong>Restart the app:</strong> Close and reopen HexCell Growth</li>
+            <li><strong>Restart your device:</strong> A device restart can resolve memory issues</li>
+            <li><strong>Update iOS:</strong> Ensure your device is running a recent iOS version</li>
+            <li><strong>Free up storage:</strong> The app needs memory to run complex simulations</li>
+        </ul>
+
+        <h2>Educational Resources</h2>
+        <p>To learn more about grain growth and materials science:</p>
+        <ul>
+            <li><strong>Materials Science Textbooks:</strong> Look for chapters on "microstructure evolution" and "grain growth"</li>
+            <li><strong>Metallurgy Courses:</strong> This app complements university-level materials science education</li>
+            <li><strong>Research Papers:</strong> Search for "cellular automata grain growth" for advanced reading</li>
+            <li><strong>Wikipedia:</strong> "Grain growth" and "Crystallography" articles provide good background</li>
+        </ul>
+
+        <h2>Privacy & Data</h2>
+        <p>HexCell Growth is designed with privacy in mind:</p>
+        <ul>
+            <li>No personal data collection</li>
+            <li>No internet connection required</li>
+            <li>No user tracking or analytics</li>
+            <li>Photo access only for saving your images</li>
+        </ul>
+        <p>Read our full <a href="privacy-policy.html">Privacy Policy</a> for complete details.</p>
+
+        <h2>System Requirements</h2>
+        <ul>
+            <li><strong>iOS Version:</strong> iOS 15.6 or later</li>
+            <li><strong>Device:</strong> iPhone or iPad</li>
+            <li><strong>Storage:</strong> Minimal space required</li>
+            <li><strong>Performance:</strong> Better performance on newer devices</li>
+        </ul>
+
+        <div class="contact-info">
+            <h2>Contact Support</h2>
+            <p>Still need help? We're here to assist you:</p>
+            
+            <h3>Email Support</h3>
+            <p><strong>Email:</strong> blisssoft16@gmail.com</p>
+            <p><em>Please include your device model and iOS version when reporting issues.</em></p>
+            
+            <h3>App Store Reviews</h3>
+            <p>For general feedback or feature requests, please leave a review on the App Store. We read every review and use feedback to improve the app.</p>
+            
+            <h3>Response Time</h3>
+            <p>We typically respond to support emails within 24-48 hours. For urgent issues, please include "URGENT" in your subject line.</p>
+        </div>
+
+        <h2>Version Information</h2>
+        <p><strong>Current Version:</strong> 1.0.0</p>
+        <p><strong>Last Updated:</strong> July 2, 2025</p>
+        
+        <div class="highlight">
+            <p><strong>Thank you for using HexCell Growth!</strong> We hope this app helps you explore and understand the fascinating world of materials science and crystal formation.</p>
+        </div>
+    </div>
+</body>
+</html>
